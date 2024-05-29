@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Date and Day</title>
+</head>
+<body>
+
+<script>
+    // Get the current date
+    var currentDate = new Date();
+
+    // Array of day names
+    var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+    // Get the day of the week
+    var dayName = days[currentDate.getDay()];
+
+    // Output the current date and day name
+    document.write("<p>Today is " + dayName + ", " + currentDate.toLocaleDateString() + "</p>");
+</script>
+
+</body>
+</html>
